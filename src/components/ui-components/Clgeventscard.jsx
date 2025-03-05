@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ClgEventscard = ({ imageUrl, eventName }) => {
   return (
     <StyledWrapper>
-      <Link to="/events">
+      <Link to={`/${eventName.toLowerCase().replace(/\s+/g, "")}`}>
         <section className="container">
           <div className="card-container">
             <div className="card-content">

@@ -8,8 +8,8 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/events" element={<Events />} />
-        <Route path="/viewevent/:eventname" element={<Eventreg />} />
+        <Route path="/:events" element={<Events />} />
+        <Route path="/:events/:eventName" element={<Eventreg />} />
       </Routes>
     </Router>
   );

@@ -1,19 +1,29 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
-const Registerbtn = () => {
+const Registerbtn = ({ eventTitle }) => {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    e.preventDefault(); // Prevent form submission behavior
+    const formattedTitle = eventTitle.toLowerCase().replace(/\s+/g, "-");
+    navigate(`/events/${formattedTitle}`);
+  };
   return (
     <StyledWrapper>
-      <form action className="container">
+      <form action="#" className="container">
         <input
           className="input-btn"
           type="radio"
-          id="valueIs-1"
+          id={`register-${eventTitle}`}
           name="valueIs-radio"
           defaultChecked
-          defaultValue="valueIs-1"
         />
-        <label className="neon-btn" htmlFor="valueIs-1">
+        <label
+          className="neon-btn"
+          htmlFor={`register-${eventTitle}`}
+          onClick={handleClick}
+        >
           <span className="span" />
           <span className="txt">Register</span>
         </label>

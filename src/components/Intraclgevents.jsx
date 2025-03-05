@@ -1,8 +1,10 @@
 import React, { useRef, useState } from "react";
+import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   technicalEvents,
-  nonTechnicalEvents,
+  onStageEvents,
+  offStageEvents,
 } from "../constants/intraEventDetails";
 import Eventdetailscard from "./Eventdetailcards";
 
@@ -15,7 +17,12 @@ export const Intraclgevents = () => {
 };
 
 const SlideTabs = () => {
-  const [activeTab, setActiveTab] = useState("nontechnical");
+  const { eventName } = useParams(); // Get route parameter
+  const isIntracollege = eventName?.toLowerCase() === "intracollege"; // Check if it's intracollege
+
+  const [activeTab, setActiveTab] = useState(
+    isIntracollege ? "onstage" : "technical"
+  );
   const [position, setPosition] = useState({ left: 0, width: 0, opacity: 0 });
 
   return (
@@ -24,18 +31,20 @@ const SlideTabs = () => {
         onMouseLeave={() => setPosition((prev) => ({ ...prev, opacity: 0 }))}
         className="relative flex w-fit rounded-full border-2 border-[#ff00ff] bg-[#1a1a1a] p-1 shadow-lg"
       >
-        <Tab
-          setPosition={setPosition}
-          onClick={() => setActiveTab("technical")}
-        >
-          Technical Events
+        <Tab setPosition={setPosition} onClick={() => setActiveTab("onstage")}>
+          On-Stage Events
         </Tab>
-        <Tab
-          setPosition={setPosition}
-          onClick={() => setActiveTab("nontechnical")}
-        >
-          Non-Technical Events
+        <Tab setPosition={setPosition} onClick={() => setActiveTab("offstage")}>
+          Off-Stage Events
         </Tab>
+        {!isIntracollege && (
+          <Tab
+            setPosition={setPosition}
+            onClick={() => setActiveTab("technical")}
+          >
+            Technical Events
+          </Tab>
+        )}
         <Cursor position={position} />
       </ul>
 
@@ -76,8 +85,15 @@ const Cursor = ({ position }) => {
 
 /* Dynamically Render Events */
 const EventList = ({ activeTab }) => {
-  const events =
-    activeTab === "technical" ? technicalEvents : nonTechnicalEvents;
+  let events = [];
+
+  if (activeTab === "technical") {
+    events = technicalEvents;
+  } else if (activeTab === "onstage") {
+    events = onStageEvents;
+  } else if (activeTab === "offstage") {
+    events = offStageEvents;
+  }
 
   return (
     <motion.div
@@ -88,12 +104,9 @@ const EventList = ({ activeTab }) => {
     >
       {events.map((event) => (
         <Eventdetailscard
-          content={event.content}
+          key={event.title}
           image={event.image}
           title={event.title}
-          date={event.date}
-          price={event.price}
-          time={event.timing}
         />
       ))}
     </motion.div>

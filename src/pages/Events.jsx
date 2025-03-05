@@ -2,8 +2,9 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import { ShootingStars } from "../components/ui/shooting-stars";
 import { StarsBackground } from "../components/ui/stars-background";
+import Intraclgevents from "../components/Intraclgevents";
+import Eventdetailscard from "../components/Eventdetailcards";
 import Footer from "../components/Footer";
-import Collegecard from "./Collegecard.jsx";
 
 const Events = () => {
   return (
@@ -11,7 +12,7 @@ const Events = () => {
       <StarsBackground />
       <ShootingStars />
       <Navbar />
-      <Collegecard />
+      <Intraclgevents />
       <div className="w-full bg-black relative z-10">
         <section id="footer">
           <Footer />

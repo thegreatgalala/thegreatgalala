@@ -21,7 +21,7 @@ const Eventdetailscard = ({ image, title, date, price, time, content }) => {
                 <span className="right">{time}</span>
               </div>
               <p className="content">{content}</p>
-              <Registerbtn />
+              <Registerbtn eventTitle={title} />
             </div>
           </div>
         </div>

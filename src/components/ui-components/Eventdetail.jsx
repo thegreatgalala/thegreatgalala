@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import { viewEventDetails } from "../../constants/vieweventdetails";
 
 const Eventdetail = () => {
-  const { eventname } = useParams();
-  const event = viewEventDetails[eventname];
+  const { eventName } = useParams();
+  const event = viewEventDetails[eventName];
 
   if (!event) {
     return (
