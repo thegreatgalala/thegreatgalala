@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Guardians";
+  src: url("/fonts/Guardians.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-sans: "Guardians", sans-serif;
+}

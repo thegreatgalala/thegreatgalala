@@ -1,0 +1,15 @@
+@import "tailwindcss";
+@import "./styles/font.css";
+
+html {
+  scroll-behavior: smooth;
+}
+body,
+a {
+  font-family: var(--font-sans);
+  cursor: url("/arrow.cur") 16 16, auto;
+}
+input,
+textarea {
+  cursor: text;
+}
