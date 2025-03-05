@@ -1,398 +1,161 @@
 import project1 from "../assets/eventphotos/sample.jpeg";
+import debate from "../assets/eventdetails/debate.jpg";
+import iplauctionhouse from "../assets/eventdetails/iplauctionhouse.jpg";
+import firelesscooking from "../assets/eventdetails/firelesscooking.jpg";
+import solodance from "../assets/eventdetails/solodance.jpg";
+import groupdance from "../assets/eventdetails/groupdance.jpg";
+import battleofbands from "../assets/eventdetails/battleofbands.jpg";
+import mime from "../assets/eventdetails/mime.jpg";
+import adapttune from "../assets/eventdetails/adapttune.jpg";
+import rampwalk from "../assets/eventdetails/rampwalk.jpg";
+import channelsurfing from "../assets/eventdetails/channelsurfing.jpg";
+import musclemafia from "../assets/eventdetails/musclemafia.jpg";
+import webdesign from "../assets/eventdetails/webdesign.jpg";
+import justaminute from "../assets/eventdetails/justamin.jpg";
+import technicalquiz from "../assets/eventdetails/technicalquiz.jpg";
+import paperpresentation from "../assets/eventdetails/paperpresentation.jpg";
 
 export const technicalEvents = [
   {
     id: 1,
-    image: project1,
+    image: debate,
     title: "Debate",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "debate",
   },
   {
     id: 2,
-    image: project1,
+    image: paperpresentation,
     title: "Paper Presentation",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "paperpresentation",
   },
   {
     id: 3,
-    image: project1,
+    image: technicalquiz,
     title: "Technical Quiz",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "technicalquiz",
   },
   {
     id: 4,
-    image: project1,
+    image: justaminute,
     title: "Just a min",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "justaminute",
   },
   {
     id: 5,
-    image: project1,
+    image: webdesign,
     title: "Web Design (UI/UX)",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "webdesign",
   },
 ];
 export const onStageEvents = [
   {
     id: 1,
-    image: project1,
+    image: solodance,
     title: "Solo Dance",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "solodance",
   },
   {
     id: 2,
-    image: project1,
+    image: groupdance,
     title: "Group Dance",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "groupdance",
   },
   {
     id: 3,
-    image: project1,
+    image: battleofbands,
     title: "Battle of Bands",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "battleofbands",
   },
   {
     id: 4,
-    image: project1,
+    image: mime,
     title: "Mime",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "mime",
   },
   {
     id: 5,
-    image: project1,
-    title: "Adap Tune",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    image: adapttune,
+    title: "AdapTune",
+    url: "adapttune",
   },
   {
     id: 6,
-    image: project1,
+    image: rampwalk,
     title: "Ramp Walk/Cosplay",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "rampwalk",
   },
   {
     id: 7,
-    image: project1,
+    image: channelsurfing,
     title: "Channel Surfing",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "channelsurfing",
   },
   {
     id: 8,
-    image: project1,
-    title: "Thundering Herd",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    image: musclemafia,
+    title: "Muscle Mafia",
+    url: "musclemafia",
   },
   {
     id: 9,
     image: project1,
-    title: "Start Music",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 10,
-    image: project1,
-    title: "Reels",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 11,
-    image: project1,
-    title: "Anime Quiz",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 12,
-    image: project1,
-    title: "Box Cricket",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 13,
-    image: project1,
-    title: "Connectionz",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 14,
-    image: project1,
-    title: "Short Film",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 15,
-    image: project1,
-    title: "E-sports (Bgmi, Freefire, Valorant)",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 16,
-    image: project1,
-    title: "Fireless Cooking",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 17,
-    image: project1,
-    title: "IPL Auction House",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    title: "Solo Singing",
+    url: "solosinging",
   },
 ];
 export const offStageEvents = [
   {
     id: 1,
     image: project1,
-    title: "Solo Dance",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    title: "Start Music",
+    url: "startmusic",
   },
   {
     id: 2,
     image: project1,
-    title: "Group Dance",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    title: "Reels",
+    url: "reels",
   },
   {
     id: 3,
     image: project1,
-    title: "Battle of Bands",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    title: "Anime Quiz",
+    url: "animequiz",
   },
   {
     id: 4,
     image: project1,
-    title: "Mime",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    title: "Box Cricket",
+    url: "boxcricket",
   },
   {
     id: 5,
     image: project1,
-    title: "Adap Tune",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    title: "Connectionz",
+    url: "connectionz",
   },
   {
     id: 6,
     image: project1,
-    title: "Ramp Walk/Cosplay",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    title: "Short Film",
+    url: "shortfilm",
   },
   {
     id: 7,
     image: project1,
-    title: "Channel Surfing",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    title: "E-sports (Bgmi, Freefire, Valorant)",
+    url: "esports",
   },
   {
     id: 8,
-    image: project1,
-    title: "Thundering Herd",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    image: firelesscooking,
+    title: "Fireless Cooking",
+    url: "firelesscooking",
   },
   {
     id: 9,
-    image: project1,
-    title: "Start Music",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 10,
-    image: project1,
-    title: "Reels",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 11,
-    image: project1,
-    title: "Anime Quiz",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 12,
-    image: project1,
-    title: "Box Cricket",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 13,
-    image: project1,
-    title: "Connectionz",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 14,
-    image: project1,
-    title: "Short Film",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 15,
-    image: project1,
-    title: "E-sports (Bgmi, Freefire, Valorant)",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 16,
-    image: project1,
-    title: "Fireless Cooking",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
-  },
-  {
-    id: 17,
-    image: project1,
+    image: iplauctionhouse,
     title: "IPL Auction House",
-    date: "27 Mar",
-    price: "₹ 140",
-    timing: "10:00-11:00",
-    content:
-      "this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about this is about.",
+    url: "iplauctionhouse",
   },
 ];

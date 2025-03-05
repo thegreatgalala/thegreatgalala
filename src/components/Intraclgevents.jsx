@@ -107,6 +107,7 @@ const EventList = ({ activeTab }) => {
           key={event.title}
           image={event.image}
           title={event.title}
+          url={event.url}
         />
       ))}
     </motion.div>

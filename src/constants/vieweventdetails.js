@@ -207,7 +207,7 @@ export const viewEventDetails = {
     brief:
       "Teams will compete in multiple rounds to identify songs, fill in lyrics, and answer music-related questions.",
     poster: "dummy_poster",
-    url: "start_music",
+    url: "startmusic",
     eventDetails: {
       time: "-",
       date: "27 Mar 2025",
@@ -244,7 +244,7 @@ export const viewEventDetails = {
       "Decisions of the judges will be final.",
     ],
   },
-  anime_quiz: {
+  animequiz: {
     title: "Anime Quiz",
     title_font: "font-anime",
     title_size: "text-3xl",
@@ -252,7 +252,7 @@ export const viewEventDetails = {
     brief:
       "A quiz event covering various anime and manga series, featuring multiple rounds with different question formats.",
     poster: "dummy_poster",
-    url: "anime_quiz",
+    url: "animequiz",
     eventDetails: {
       time: "-",
       date: "27 Mar 2025",
@@ -267,7 +267,7 @@ export const viewEventDetails = {
       "Decisions of the judges will be final.",
     ],
   },
-  box_cricket: {
+  boxcricket: {
     title: "Box Cricket",
     title_font: "font-sports",
     title_size: "text-3xl",
@@ -275,7 +275,7 @@ export const viewEventDetails = {
     brief:
       "A fun version of cricket played in a confined space with unique rules to challenge players.",
     poster: "dummy_poster",
-    url: "box_cricket",
+    url: "boxcricket",
     eventDetails: {
       time: "-",
       date: "27 Mar 2025",
@@ -310,7 +310,7 @@ export const viewEventDetails = {
       "Decisions of the judges will be final.",
     ],
   },
-  short_film: {
+  shortfilm: {
     title: "Short Film",
     title_font: "font-film",
     title_size: "text-3xl",
@@ -319,7 +319,7 @@ export const viewEventDetails = {
     brief:
       "Participants will create a short film that showcases storytelling, cinematography, and originality.",
     poster: "dummy_poster",
-    url: "short_film",
+    url: "shortfilm",
     eventDetails: {
       time: "-",
       date: "27 Mar 2025",
@@ -334,7 +334,7 @@ export const viewEventDetails = {
       "Decisions of the judges will be final.",
     ],
   },
-  e_sports: {
+  esports: {
     title: "E-Sports",
     title_font: "font-gaming",
     title_size: "text-3xl",
@@ -342,7 +342,7 @@ export const viewEventDetails = {
     brief:
       "An intense gaming competition featuring popular multiplayer titles.",
     poster: "dummy_poster",
-    url: "e_sports",
+    url: "esports",
     eventDetails: {
       time: "-",
       date: "27 Mar 2025",

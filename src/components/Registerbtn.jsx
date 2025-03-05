@@ -2,11 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
-const Registerbtn = ({ eventTitle }) => {
+const Registerbtn = ({ eventurl }) => {
   const navigate = useNavigate();
   const handleClick = (e) => {
     e.preventDefault(); // Prevent form submission behavior
-    const formattedTitle = eventTitle.toLowerCase().replace(/\s+/g, "-");
+    const formattedTitle = eventurl.toLowerCase().replace(/\s+/g, "-");
     navigate(`/events/${formattedTitle}`);
   };
   return (
@@ -15,13 +15,13 @@ const Registerbtn = ({ eventTitle }) => {
         <input
           className="input-btn"
           type="radio"
-          id={`register-${eventTitle}`}
+          id={`register-${eventurl}`}
           name="valueIs-radio"
           defaultChecked
         />
         <label
           className="neon-btn"
-          htmlFor={`register-${eventTitle}`}
+          htmlFor={`register-${eventurl}`}
           onClick={handleClick}
         >
           <span className="span" />

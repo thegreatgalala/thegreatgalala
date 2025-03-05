@@ -2,7 +2,15 @@ import React from "react";
 import styled from "styled-components";
 import Registerbtn from "./Registerbtn";
 
-const Eventdetailscard = ({ image, title, date, price, time, content }) => {
+const Eventdetailscard = ({
+  image,
+  title,
+  date,
+  price,
+  time,
+  content,
+  url,
+}) => {
   return (
     <StyledWrapper>
       <form action className="container">
@@ -21,7 +29,7 @@ const Eventdetailscard = ({ image, title, date, price, time, content }) => {
                 <span className="right">{time}</span>
               </div>
               <p className="content">{content}</p>
-              <Registerbtn eventTitle={title} />
+              <Registerbtn eventurl={url} />
             </div>
           </div>
         </div>
