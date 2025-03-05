@@ -70,7 +70,12 @@ const Navbar = () => {
           onClick={onToggleMenu}
           className="text-3xl cursor-pointer md:hidden"
         >
-          {menuOpen ? <IoClose /> : <IoMenu />} {/* Toggle between icons */}
+          {menuOpen ? (
+            <IoClose className="text-white" />
+          ) : (
+            <IoMenu className="text-white" />
+          )}{" "}
+          {/* Toggle between icons */}
         </button>
       </div>
     </nav>

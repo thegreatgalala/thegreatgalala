@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import tgglogo from "../assets/tgglogo.svg";
-import styled from "styled-components";
 import Countdown from "./ui-components/Countdown";
 import PeriNeonize from "../assets/PeriNeonize.svg";
+import { useNavigate } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import {
   useMotionTemplate,
@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     animate(color, COLORS_TOP, {
@@ -23,12 +24,12 @@ const Hero = () => {
       repeat: Infinity,
       repeatType: "mirror",
     });
-  }, []);
+  }, [color]);
 
   const border = useMotionTemplate`1px solid ${color}`;
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center p-6 pt-48 space-y-10 overflow-hidden bg-gray-950">
+    <div className="flex flex-col items-center justify-center min-h-screen text-center p-6 pt-48 space-y-10 overflow-hidden ">
       <span className="mb-1.5 inline-block px-3 py-1.5 text-sm">
         <img
           src={PeriNeonize}
@@ -43,6 +44,7 @@ const Hero = () => {
       />
 
       <motion.button
+        onClick={() => navigate("/events")}
         style={{
           border,
           boxShadow,
@@ -59,7 +61,7 @@ const Hero = () => {
         <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
       </motion.button>
 
-      <div className="w-full flex justify-center mt-10">
+      <div className="w-full flex justify-center ">
         <Countdown />
       </div>
     </div>
