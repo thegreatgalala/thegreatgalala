@@ -35,6 +35,7 @@ const Home = () => {
         <About />
       </section>
       <Sponsors />
+      <Events />
       <section id="events"></section>
       <div className="w-full bg-black relative z-10">
         <section id="footer">

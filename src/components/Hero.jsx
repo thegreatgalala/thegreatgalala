@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import tgglogo from "../assets/tgglogo.svg";
 import Countdown from "./ui-components/Countdown";
 import PeriNeonize from "../assets/PeriNeonize.svg";
-import { useNavigate } from "react-router-dom";
 import { FiArrowRight } from "react-icons/fi";
 import {
   useMotionTemplate,
@@ -15,7 +14,12 @@ import { Link } from "react-router-dom";
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 const Hero = () => {
   const color = useMotionValue(COLORS_TOP[0]);
-  const navigate = useNavigate();
+  const scrollToEvents = () => {
+    const eventsSection = document.getElementById("events");
+    if (eventsSection) {
+      eventsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   useEffect(() => {
     animate(color, COLORS_TOP, {
@@ -44,7 +48,7 @@ const Hero = () => {
       />
 
       <motion.button
-        onClick={() => navigate("/events")}
+        onClick={scrollToEvents}
         style={{
           border,
           boxShadow,
