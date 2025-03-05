@@ -5,6 +5,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "LexendDecaRegular";
+  src: url("/fonts/LexendDecaRegular.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --font-sans: "Guardians", sans-serif;
 }

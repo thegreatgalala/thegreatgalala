@@ -21,7 +21,7 @@ const Card = () => {
           </a>
           <a
             className="social-link4"
-            href="https://www.instagram.com/peri.fiesta/"
+            href="https://www.instagram.com/peri_neonize.25/"
           >
             <svg
               height="1em"
@@ -54,7 +54,7 @@ const StyledWrapper = styled.div`
   .card svg {
     position: absolute;
     display: flex;
-    width: 60%;
+    width: 40%;
     height: 100%;
     font-size: 24px;
     font-weight: 700;
@@ -95,19 +95,19 @@ const StyledWrapper = styled.div`
 
   @keyframes bounce_613 {
     40% {
-      transform: scale(1.4);
-    }
-
-    60% {
-      transform: scale(0.8);
-    }
-
-    80% {
       transform: scale(1.2);
     }
 
-    100% {
+    60% {
+      transform: scale(0.6);
+    }
+
+    80% {
       transform: scale(1);
+    }
+
+    100% {
+      transform: scale(0.8);
     }
   }
 `;
