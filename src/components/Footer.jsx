@@ -5,7 +5,7 @@ import PeriNeonize from "../assets/PeriNeonize.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800  w-full">
+    <footer className="bg-gray-900 text-white w-full">
       <div className="text-white text-xl tracking-tight lg:mt-12 lg:text-3xl w-full overflow-hidden px-6 py-2 flex-col items-center">
         <div
           className="my-6 flex items-center gap-4 after:h-1 after:bg-gray-300 after:rounded-full after:content-[''] 
@@ -72,7 +72,7 @@ const Footer = () => {
       </div>
 
       {/* Full-width Copyright & Social Links Bar */}
-      <div className="w-full bg-gray-100 dark:bg-gray-700 py-4 px-4">
+      <div className="w-full bg-gray-900 text-white py-4 px-4">
         <div
           className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm"
           style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
