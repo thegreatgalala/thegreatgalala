@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 const ClgEventscard = ({ imageUrl, eventName }) => {
   return (
-    <Link to={`/${eventName.toLowerCase().replace(/\s+/g, "")}`}>
+    <Link
+      to={`/${eventName.toLowerCase().replace(/\s+/g, "")}`}
+      onClick={() => window.scrollTo(0, 0)}
+    >
       <div className="relative drop-shadow-xl w-64 sm:w-80 md:w-96 h-96 sm:h-[450px] md:h-[500px] overflow-hidden  bg-[#3d3c3d]">
         {/* Image - Fills Almost Entire Card */}
         <img

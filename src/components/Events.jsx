@@ -10,15 +10,22 @@ const Events = () => {
       <div className="w-full flex flex-col items-center">
         <div className="text-white pb-16 text-4xl tracking-tight lg:mt-20 lg:text-6xl w-full flex items-center justify-center">
           <div className="flex items-center w-full">
+            {/* Left Line - Hidden on Mobile */}
             <div className="flex-1 h-2 bg-gray-300 rounded-full hidden sm:block"></div>
-            <span className="mx-4">Events</span>
+
+            {/* Centered Text */}
+            <span className="mx-4 flex justify-center w-full sm:w-auto">
+              Events
+            </span>
+
+            {/* Right Line - Hidden on Mobile */}
             <div className="flex-1 h-2 bg-gray-300 rounded-full hidden sm:block"></div>
           </div>
         </div>
       </div>
       <div className="flex flex-wrap gap-40 md:gap-80 pt-10 justify-center">
         <BackgroundGradient>
-          <Eventcategory imageUrl={intracollege} eventName="Inter College" />
+          <Eventcategory imageUrl={intracollege} eventName="Intra College" />
         </BackgroundGradient>
         <BackgroundGradient>
           <Eventcategory imageUrl={intercollege} eventName="Inter College" />

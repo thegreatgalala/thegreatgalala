@@ -31,7 +31,7 @@ const About = () => {
           </div>
           <div className="lg:w-1/2 w-full text-center lg:text-left">
             <p
-              className="mt-4 text-gray-300 text-xl sm:text-xl md:text-2xl lg:text-3xl"
+              className="mt-4 text-gray-300 text-xl sm:text-xl md:text-2xl lg:text-3xl text-justify"
               style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
             >
               Join us for an unforgettable journey filled with excitement,

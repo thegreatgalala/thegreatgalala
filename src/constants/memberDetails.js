@@ -1,3 +1,7 @@
+import rohit from "../assets/team/Rohit.jpeg";
+import shaileshwaran from "../assets/team/Shaileshwaran.jpeg";
+import dinesh from "../assets/team/Dinesh.jpeg";
+
 const memberDetails = [
   {
     id: 1,
@@ -8,21 +12,21 @@ const memberDetails = [
   },
   {
     id: 2,
-    image: "https://randomuser.me/api/portraits/men/75.jpg",
+    image: dinesh,
     name: "Dinesh Kumar K",
     role: "dinxeshh",
     instagram: "https://www.linkedin.com/in/dinxeshkumar/",
   },
   {
     id: 3,
-    image: "https://randomuser.me/api/portraits/women/65.jpg",
+    image: rohit,
     name: "Rohit.K",
     role: "therohit._",
     instagram: "https://rohit-portfolio1.vercel.app/",
   },
   {
     id: 4,
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    image: shaileshwaran,
     name: "A V K Shaileshwaran",
     role: "avks._",
     instagram: "https://avkshaileshwaran.netlify.app/",

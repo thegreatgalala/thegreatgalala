@@ -2,19 +2,23 @@ import React from "react";
 import Sociallinks from "./ui-components/Sociallinks";
 import tgglogo from "../assets/tgglogo.svg";
 import PeriNeonize from "../assets/PeriNeonize.svg";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
 const Footer = () => {
   return (
     <footer className="bg-black text-white w-full">
-      <div className="text-white text-xl tracking-tight  lg:text-3xl w-full overflow-hidden px-6 py-2 flex-col items-center">
+      <div className="text-white text-xl tracking-tight lg:text-3xl w-full overflow-hidden px-6 py-2 flex flex-col items-center">
         <div
-          className="my-6 flex items-center gap-4 after:h-1 after:bg-gray-500 after:rounded-full after:content-[''] 
-                      after:flex-1 after:w-full sm:after:w-3/4 md:after:w-1/2 lg:after:w-1/4 xl:after:w-1/6 
-                      after:hidden sm:after:block text-center"
+          className="my-6 flex items-center gap-4 text-center w-full justify-center sm:justify-normal 
+                after:h-1 after:bg-gray-500 after:rounded-full after:content-[''] 
+                after:flex-1 after:w-full sm:after:w-3/4 md:after:w-1/2 lg:after:w-1/4 xl:after:w-1/6 
+                after:hidden sm:after:block"
         >
           Contact Us
         </div>
       </div>
+
       <div className="px-6 py-4 lg:py-6">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 py-6 text-base">
           {/* Image Section */}
@@ -47,7 +51,7 @@ const Footer = () => {
             </div>
             <div>
               <h2 className="mb-4 text-xs font-semibold text-white uppercase">
-                Staff Co-Ordinators
+                Students Co-Ordinators
               </h2>
               <ul className="text-gray-300 text-sm">
                 <li className="mb-4">Mr. S S Sujeeth - 9790232920</li>
@@ -74,7 +78,7 @@ const Footer = () => {
       {/* Full-width Copyright & Social Links Bar */}
       <div className="w-full bg-black py-4 px-4">
         <div
-          className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm"
+          className="w-full px-10 flex flex-col md:flex-row items-center justify-between text-sm"
           style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
         >
           <span className="text-sm text-gray-300 text-center md:text-left">
@@ -88,8 +92,21 @@ const Footer = () => {
             </a>
             . All Rights Reserved.
           </span>
-          <div className="flex md:mt-0 space-x-4">
-            <Sociallinks />
+          <div className="flex items-center justify-center w-2/12">
+            <a
+              href="https://www.linkedin.com/in/the-great-galala-peri-fiesta/"
+              className="m-2 hover:cursor-pointer"
+              target="blank"
+            >
+              <LinkedInIcon fontSize="large" />
+            </a>
+            <a
+              href="https://www.instagram.com/peri_neonize.25/"
+              className="m-2 hover:cursor-pointer text"
+              target="blank"
+            >
+              <InstagramIcon fontSize="large" />
+            </a>
           </div>
         </div>
       </div>
