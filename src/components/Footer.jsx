@@ -5,10 +5,10 @@ import PeriNeonize from "../assets/PeriNeonize.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white w-full">
-      <div className="text-white text-xl tracking-tight lg:mt-12 lg:text-3xl w-full overflow-hidden px-6 py-2 flex-col items-center">
+    <footer className="bg-black text-white w-full">
+      <div className="text-white text-xl tracking-tight  lg:text-3xl w-full overflow-hidden px-6 py-2 flex-col items-center">
         <div
-          className="my-6 flex items-center gap-4 after:h-1 after:bg-gray-300 after:rounded-full after:content-[''] 
+          className="my-6 flex items-center gap-4 after:h-1 after:bg-gray-500 after:rounded-full after:content-[''] 
                       after:flex-1 after:w-full sm:after:w-3/4 md:after:w-1/2 lg:after:w-1/4 xl:after:w-1/6 
                       after:hidden sm:after:block text-center"
         >
@@ -17,7 +17,7 @@ const Footer = () => {
       </div>
       <div className="px-6 py-4 lg:py-6">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 py-6 text-base">
-          {/* Image Section (Inside Footer) */}
+          {/* Image Section */}
           <div className="w-full md:w-1/3 flex flex-col items-center space-y-4">
             <img
               src={PeriNeonize}
@@ -37,19 +37,19 @@ const Footer = () => {
             style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
           >
             <div>
-              <h2 className="mb-4 text-xs font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-4 text-xs font-semibold text-white uppercase">
                 Staff Co-Ordinators
               </h2>
-              <ul className="text-gray-300 dark:text-gray-400 text-sm">
+              <ul className="text-gray-300 text-sm">
                 <li className="mb-4">Mr. Anil Kumar - 9566137223</li>
                 <li className="mb-4">Dr. N. Thangam - 9025278164</li>
               </ul>
             </div>
             <div>
-              <h2 className="mb-4 text-xs font-semibold text-gray-900 uppercase dark:text-white">
+              <h2 className="mb-4 text-xs font-semibold text-white uppercase">
                 Staff Co-Ordinators
               </h2>
-              <ul className="text-gray-600 dark:text-gray-400 text-sm">
+              <ul className="text-gray-300 text-sm">
                 <li className="mb-4">Mr. S S Sujeeth - 9790232920</li>
                 <li className="mb-4">Mr. Harish Babu - 9360491955</li>
                 <li className="mb-4">Ms. Sabitha - 7603992191</li>
@@ -57,7 +57,7 @@ const Footer = () => {
                 <li className="mb-4">Mr. Sai Prasanth- 7305608399</li>
               </ul>
             </div>
-            <div className="w-full  flex justify-center">
+            <div className="w-full flex justify-center">
               <iframe
                 title="Google Map"
                 className="w-full max-w-sm h-48 rounded-lg shadow-lg border-0"
@@ -72,19 +72,17 @@ const Footer = () => {
       </div>
 
       {/* Full-width Copyright & Social Links Bar */}
-      <div className="w-full bg-gray-900 text-white py-4 px-4">
+      <div className="w-full bg-black py-4 px-4">
         <div
           className="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm"
           style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
         >
-          <span className="text-sm text-gray-500 dark:text-gray-300 text-center md:text-left">
+          <span className="text-sm text-gray-300 text-center md:text-left">
             © 2025{" "}
             <a
               href="https://peri.education/periit/index.php"
-              style={{
-                fontFamily: "LexendDecaRegular, sans-serif",
-                color: "white",
-              }}
+              className="text-white text-sm"
+              style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
             >
               PERI
             </a>
