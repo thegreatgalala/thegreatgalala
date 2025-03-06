@@ -35,11 +35,10 @@ const Home = () => {
       <section id="hero">
         <Hero />
       </section>
-
       <section id="about">
         <About />
       </section>
-      <Sponsors />
+      {/* <Sponsors /> */} {/* Uncomment if needed */}
       <section id="events">
         <Events />
       </section>
