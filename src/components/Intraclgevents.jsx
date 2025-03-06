@@ -7,7 +7,7 @@ import {
   onStageEvents,
   offStageEvents,
 } from "../constants/intraEventDetails";
-import ClgEventscard from "./ui-components/ClgEventscard";
+import ClgEventscard from "../components/ui-components/Clgeventscard";
 
 export const Intraclgevents = () => {
   return (
