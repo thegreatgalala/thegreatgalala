@@ -6,7 +6,7 @@ import {
   onStageEvents,
   offStageEvents,
 } from "../constants/intraEventDetails";
-import Eventdetailscard from "./Eventdetailcards";
+import ClgEventscard from "./ui-components/ClgEventscard";
 
 export const Intraclgevents = () => {
   return (
@@ -91,14 +91,13 @@ const EventList = ({ activeTab }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="grid gap-x-16 gap-y-1 w-full max-w-6xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      className="grid gap-x-16 gap-y-1 w-full max-w-6xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 items-start"
     >
       {events.map((event) => (
-        <Eventdetailscard
+        <ClgEventscard
           key={event.title}
-          image={event.image}
-          title={event.title}
-          url={event.url}
+          imageUrl={event.image}
+          eventName={event.title}
         />
       ))}
     </motion.div>

@@ -5,7 +5,7 @@ import intercollege from "../assets/intercollege.png";
 
 const Events = () => {
   return (
-    <div className="flex w-full min-h-screen overflow-hidden px-8 py-4 flex-col items-center">
+    <div className="flex w-full min-h-screen overflow-hidden px-8 py-4 flex-col items-center mb-10">
       <div className="w-full flex flex-col items-center">
         <div className="text-white  text-3xl tracking-tight lg:mt-16 pb-20 lg:text-4xl w-full text-center">
           Events

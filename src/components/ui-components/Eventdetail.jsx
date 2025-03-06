@@ -1,9 +1,10 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 import { viewEventDetails } from "../../constants/vieweventdetails";
 
 const Eventdetail = () => {
   const { eventName } = useParams();
+  const location = useLocation();
   const event = viewEventDetails[eventName];
 
   if (!event) {
@@ -13,8 +14,14 @@ const Eventdetail = () => {
       </div>
     );
   }
+
+  // Determine which date to display
+  const eventDate = location.pathname.includes("intercollege")
+    ? event.eventDetails.date1
+    : event.eventDetails.date2;
+
   return (
-    <div className="flex w-ful min-h-screen overflow-hidden px-5 py-4 flex-col items-center">
+    <div className="flex w-full min-h-screen overflow-hidden px-5 py-4 flex-col items-center">
       <div className="w-full flex flex-col items-center">
         <div className="text-white pb-16 text-4xl tracking-tight mt-22 sm:mt-22 md:mt-24 lg:mt-28 xl:mt-30 lg:text-5xl w-full">
           <div
@@ -26,6 +33,7 @@ const Eventdetail = () => {
           </div>
         </div>
       </div>
+
       <div className="w-full max-w-10/12 flex flex-col lg:flex-row lg:items-start gap-10 text-center lg:text-left">
         {/* Left Side: Card with Description & Brief */}
         <div className="lg:w-1/2 flex flex-col items-center lg:items-start">
@@ -38,7 +46,7 @@ const Eventdetail = () => {
             {/* Image inside the Card */}
             <div className="w-full h-full flex justify-center items-center">
               <img
-                src={event.poster} // Use event poster dynamically
+                src={event.poster}
                 alt={event.title}
                 className="w-[99.5%] h-[99.5%] object-cover"
               />
@@ -70,7 +78,7 @@ const Eventdetail = () => {
               Rules
             </h4>
             <ul
-              className="text-white text-sm  sm:text-base leading-relaxed list-disc list-inside"
+              className="text-white text-sm sm:text-base leading-relaxed list-disc list-inside"
               style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
             >
               {event.rules.map((rule, index) => (
@@ -88,7 +96,7 @@ const Eventdetail = () => {
               className="text-white text-sm sm:text-base leading-relaxed"
               style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
             >
-              <strong>Date:</strong> {event.eventDetails.date}
+              <strong>Date:</strong> {eventDate}
             </p>
             <p
               className="text-white text-sm sm:text-base leading-relaxed"

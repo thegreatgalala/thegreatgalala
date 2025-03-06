@@ -46,19 +46,26 @@ const Hero = () => {
         src={tgglogo}
         alt="cultural-logo"
       />
+      <div
+        className="text-3xl sm:text-2xl md:text-4xl -mt-5 font-extrabold text-white"
+        style={{
+          fontFamily: "LexendDecaRegular, sans-serif",
+          WebkitTextStroke: "1.5px #ff00ff", // Pink outline
+          textShadow: "0 0 4px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff", // Neon glow
+        }}
+      >
+        March 27th & 28th
+      </div>
 
       <motion.button
-        onClick={scrollToEvents}
         style={{
+          fontFamily: "LexendDecaRegular, sans-serif",
           border,
           boxShadow,
         }}
-        whileHover={{
-          scale: 1.015,
-        }}
-        whileTap={{
-          scale: 0.985,
-        }}
+        onClick={scrollToEvents}
+        whileHover={{ scale: 1.015 }}
+        whileTap={{ scale: 0.985 }}
         className="group relative flex w-fit items-center gap-0.5 rounded-full bg-gray-950/10 px-6 py-3 text-gray-50 transition-colors hover:bg-gray-950/50 tracking-wide"
       >
         Register Now

@@ -30,7 +30,10 @@ const About = () => {
             </BackgroundGradient>
           </div>
           <div className="lg:w-1/2 w-full text-center lg:text-left">
-            <p className="mt-4 text-gray-300 text-base sm:text-base md:text-lg lg:text-xl">
+            <p
+              className="mt-4 text-gray-300 text-xl sm:text-xl md:text-2xl lg:text-3xl"
+              style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+            >
               Join us for an unforgettable journey filled with excitement,
               learning, and fun. Join us for an unforgettable journey filled
               with excitement, learning, and fun. Join us for an unforgettable

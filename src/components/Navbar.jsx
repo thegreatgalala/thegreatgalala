@@ -32,7 +32,7 @@ const Navbar = () => {
           onClick={() => handleNavClick("hero")}
           state={{ scrollTo: "hero" }}
         >
-          <img className="w-32" src={perilogo} alt="clglogo" />
+          <img className="w-28" src={perilogo} alt="clglogo" />
         </Link>
       </div>
       <div
@@ -71,7 +71,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex items-center gap-6">
-        <img className="w-32" src={greatgalalalogo} alt="culturallogo" />
+        <img className="w-28" src={greatgalalalogo} alt="culturallogo" />
         <button
           onClick={onToggleMenu}
           className="text-3xl cursor-pointer md:hidden"

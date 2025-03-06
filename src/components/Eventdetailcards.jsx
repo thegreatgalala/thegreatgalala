@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 20px;
+  padding: 0px;
 
   .container {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -37,7 +37,8 @@ const StyledWrapper = styled.div`
     flex-wrap: wrap;
     flex-direction: column;
     gap: 1em;
-    max-width: 400px; /* Fixed width */
+    max-width: 400px;
+    min-width:400px /* Fixed width */
     width: 100%;
   }
 
@@ -75,8 +76,10 @@ const StyledWrapper = styled.div`
 
   .title {
     font-size: 1.5rem;
-    color: #ff00ff;
-    margin-top: 10px;
+    color: #ffff;
+    margin-top: 0px;
+    font-family:LexendDecaRegular 
+
   }
 
   @keyframes blinkShadowsFilter {

@@ -13,6 +13,13 @@ import paperpresentation from "../assets/eventdetails/paperpresentation.jpg";
 import debate from "../assets/eventdetails/debate.jpg";
 import iplauctionhouse from "../assets/eventdetails/iplauctionhouse.jpg";
 import firelesscooking from "../assets/eventdetails/firelesscooking.jpg";
+import esports from "../assets/eventdetails/esports.jpeg";
+import shortfilm from "../assets/eventdetails/shortfilm.jpeg";
+import connectionz from "../assets/eventdetails/connectionz.jpeg";
+import boxcricket from "../assets/eventdetails/boxcricket.jpeg";
+import animequiz from "../assets/eventdetails/animequiz.jpeg";
+import reels from "../assets/eventdetails/reels.jpeg";
+import startmusic from "../assets/eventdetails/startmusic.jpeg";
 
 export const viewEventDetails = {
   solodance: {
@@ -26,7 +33,9 @@ export const viewEventDetails = {
     url: "solodance",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
+
       fees: "₹100",
     },
     rules: [
@@ -50,7 +59,8 @@ export const viewEventDetails = {
     url: "groupdance",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -74,7 +84,8 @@ export const viewEventDetails = {
     url: "battleofbands",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -98,7 +109,8 @@ export const viewEventDetails = {
     url: "mime",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -121,7 +133,8 @@ export const viewEventDetails = {
     url: "adapttune",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -142,7 +155,8 @@ export const viewEventDetails = {
     url: "rampwalk",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹100",
     },
     rules: [
@@ -165,7 +179,8 @@ export const viewEventDetails = {
     url: "channel_surfing",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -188,7 +203,8 @@ export const viewEventDetails = {
     url: "muscle_mafia",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹ 100",
     },
     rules: [
@@ -206,11 +222,12 @@ export const viewEventDetails = {
     description: "Test your musical knowledge and speed in this exciting game!",
     brief:
       "Teams will compete in multiple rounds to identify songs, fill in lyrics, and answer music-related questions.",
-    poster: "dummy_poster",
+    poster: startmusic,
     url: "startmusic",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -219,7 +236,6 @@ export const viewEventDetails = {
       "Round 2: Buzzer round - Identify songs from short clips.",
       "Round 3: Fill in the missing lyrics.",
       "Incorrect answers in Rounds 1 & 2 do not award points to the opponent, but Round 3 does.",
-      "Decisions of the judges will be final.",
     ],
   },
   reels: {
@@ -229,11 +245,12 @@ export const viewEventDetails = {
     description: "Create short, engaging, and creative video content!",
     brief:
       "Participants will create and submit short-form videos that showcase creativity and originality.",
-    poster: "dummy_poster",
+    poster: reels,
     url: "reels",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹100",
     },
     rules: [
@@ -241,7 +258,6 @@ export const viewEventDetails = {
       "The video should not exceed more than 60 seconds.",
       "Content should not contain violence or defamatory material.",
       "Participants must submit their reel at least three hours before the event.",
-      "Decisions of the judges will be final.",
     ],
   },
   animequiz: {
@@ -251,11 +267,12 @@ export const viewEventDetails = {
     description: "Test your knowledge of anime and manga!",
     brief:
       "A quiz event covering various anime and manga series, featuring multiple rounds with different question formats.",
-    poster: "dummy_poster",
+    poster: animequiz,
     url: "animequiz",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -263,8 +280,6 @@ export const viewEventDetails = {
       "The quiz will consist of multiple rounds, including MCQs, picture identification, and rapid-fire questions.",
       "No external help (internet, books, or audience assistance) is allowed.",
       "Points will be awarded for each correct answer.",
-      "In case of a tie, a tiebreaker round will be conducted.",
-      "Decisions of the judges will be final.",
     ],
   },
   boxcricket: {
@@ -274,11 +289,12 @@ export const viewEventDetails = {
     description: "A fast-paced indoor cricket match with a twist!",
     brief:
       "A fun version of cricket played in a confined space with unique rules to challenge players.",
-    poster: "dummy_poster",
+    poster: boxcricket,
     url: "boxcricket",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -296,18 +312,18 @@ export const viewEventDetails = {
     description: "A puzzle-solving event where participants connect the dots!",
     brief:
       "Teams will need to identify the correct song or image by making logical connections between given clues.",
-    poster: "dummy_poster",
+    poster: connectionz,
     url: "connectionz",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
       "Teams must answer using the buzzer.",
       "45 seconds will be given to identify each clue.",
       "Incorrect answers will not be awarded points to the opponent.",
-      "Decisions of the judges will be final.",
     ],
   },
   shortfilm: {
@@ -318,11 +334,12 @@ export const viewEventDetails = {
       "Showcase your filmmaking skills in this creative competition!",
     brief:
       "Participants will create a short film that showcases storytelling, cinematography, and originality.",
-    poster: "dummy_poster",
+    poster: shortfilm,
     url: "shortfilm",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -330,8 +347,6 @@ export const viewEventDetails = {
       "Content should be original, appropriate, and free from offensive material.",
       "Films must be in MP4 or MOV format with HD quality.",
       "No plagiarism or copyrighted material without permission.",
-      "Judging criteria include storytelling, cinematography, editing, and overall presentation.",
-      "Decisions of the judges will be final.",
     ],
   },
   esports: {
@@ -341,11 +356,12 @@ export const viewEventDetails = {
     description: "Compete in the ultimate digital battle!",
     brief:
       "An intense gaming competition featuring popular multiplayer titles.",
-    poster: "dummy_poster",
+    poster: esports,
     url: "esports",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -367,7 +383,8 @@ export const viewEventDetails = {
     url: "firelesscooking",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -390,7 +407,8 @@ export const viewEventDetails = {
     url: "iplauctionhouse",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -411,7 +429,8 @@ export const viewEventDetails = {
     url: "debate",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -441,7 +460,8 @@ export const viewEventDetails = {
     url: "paperpresentation",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -463,7 +483,8 @@ export const viewEventDetails = {
     url: "technicalquiz",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
     },
     rules: [
@@ -483,7 +504,8 @@ export const viewEventDetails = {
     url: "justaminute",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹100",
     },
     rules: [
@@ -505,8 +527,31 @@ export const viewEventDetails = {
     url: "webdesign",
     eventDetails: {
       time: "-",
-      date: "27 Mar 2025",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
       fees: "₹50 per person",
+    },
+    rules: [
+      "Participants can compete individually or in teams.",
+      "The design must align with the given theme.",
+      "Websites should focus on smooth navigation, clear typography, and good color contrast.",
+      "Each team/participant will get 8-10 minutes to present their design.  ",
+    ],
+  },
+  solosinging: {
+    title: "Solo singing",
+    title_font: "font-tech",
+    title_size: "text-3xl",
+    description: "Create visually stunning and user-friendly websites!",
+    brief:
+      "Participants will design a functional and aesthetically pleasing web interface based on the given theme.",
+    poster: webdesign,
+    url: "webdesign",
+    eventDetails: {
+      time: "-",
+      date1: "27 Mar 2025",
+      date2: "28 Mar 2025",
+      fees: "₹100",
     },
     rules: [
       "Participants can compete individually or in teams.",
