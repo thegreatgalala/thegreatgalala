@@ -5,7 +5,7 @@ import PeriNeonize from "../assets/PeriNeonize.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 dark:bg-gray-900 w-full">
+    <footer className="bg-gray-800 dark:bg-gray-900 w-full">
       <div className="text-white text-xl tracking-tight lg:mt-12 lg:text-3xl w-full overflow-hidden px-6 py-2 flex-col items-center">
         <div
           className="my-6 flex items-center gap-4 after:h-1 after:bg-gray-300 after:rounded-full after:content-[''] 
