@@ -25,9 +25,7 @@ const ClgEventscard = ({ imageUrl, eventName }) => {
 
 const StyledWrapper = styled.div`
   .container {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-weight: bold;
+    font-family: "LexendDecaRegular", sans-serif;
     display: flex;
     margin: auto;
     aspect-ratio: 16/9;
@@ -36,7 +34,7 @@ const StyledWrapper = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 2em;
+    gap: 5em;
   }
 
   .card-container {

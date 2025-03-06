@@ -3,12 +3,18 @@ import Navbar from "../components/Navbar";
 import { ShootingStars } from "../components/ui/shooting-stars";
 import { StarsBackground } from "../components/ui/stars-background";
 import Intraclgevents from "../components/Intraclgevents";
+import Fireworks from "../components/ui/fireworks";
+import Background from "../components/Background";
 import Eventdetailscard from "../components/Eventdetailcards";
 import Footer from "../components/Footer";
 
 const Events = () => {
   return (
-    <div className="w-screen h-auto bg-purple-900 bg-cover relative">
+    <div className="w-screen h-auto bg-gray-950 bg-cover relative">
+      <div className="absolute inset-0 z-0">
+        <Background />
+      </div>
+      <Fireworks />
       <StarsBackground />
       <ShootingStars />
       <Navbar />

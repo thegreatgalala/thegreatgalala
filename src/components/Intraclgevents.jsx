@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -10,44 +10,64 @@ import Eventdetailscard from "./Eventdetailcards";
 
 export const Intraclgevents = () => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen text-center p-6 pt-50 overflow-hidden bg-purple-900">
-      <SlideTabs />
+    <div className="flex flex-col items-center justify-center min-h-screen text-center p-6 pt-50 overflow-hidden">
+      <CustomTabs />
     </div>
   );
 };
 
-const SlideTabs = () => {
-  const { eventName } = useParams(); // Get route parameter
-  const isIntracollege = eventName?.toLowerCase() === "intracollege"; // Check if it's intracollege
+const CustomTabs = () => {
+  const { events } = useParams();
+  const isIntracollege = events?.toLowerCase() === "intracollege";
 
   const [activeTab, setActiveTab] = useState(
     isIntracollege ? "onstage" : "technical"
   );
-  const [position, setPosition] = useState({ left: 0, width: 0, opacity: 0 });
 
   return (
     <div className="w-full flex flex-col items-center">
-      <ul
-        onMouseLeave={() => setPosition((prev) => ({ ...prev, opacity: 0 }))}
-        className="relative flex w-fit rounded-full border-2 border-[#ff00ff] bg-[#1a1a1a] p-1 shadow-lg"
-      >
-        <Tab setPosition={setPosition} onClick={() => setActiveTab("onstage")}>
-          On-Stage Events
-        </Tab>
-        <Tab setPosition={setPosition} onClick={() => setActiveTab("offstage")}>
-          Off-Stage Events
-        </Tab>
-        {!isIntracollege && (
-          <Tab
-            setPosition={setPosition}
-            onClick={() => setActiveTab("technical")}
+      {/* Neon Styled Tab Selector */}
+      <div className="relative flex justify-center items-center bg-[#0d0d0d] p-2 rounded-full border-2 border-transparent bg-clip-padding animate-glow">
+        <div className="relative flex w-[400px] h-[40px] lg:w-[800px] rounded-full bg-[#0d0d0d] border-2 border-[#ff00ff] shadow-[0_0_10px_#ff00ff] transition-all">
+          <button
+            style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+            className={`${
+              isIntracollege ? "w-1/2" : "w-1/3"
+            } text-white uppercase font-bold py-2 rounded-full transition-all ${
+              activeTab === "onstage" ? "bg-[#ff00ff]" : "hover:bg-[#ff00ff5d]"
+            }`}
+            onClick={() => setActiveTab("onstage")}
           >
-            Technical Events
-          </Tab>
-        )}
-        <Cursor position={position} />
-      </ul>
+            On-Stage
+          </button>
+          <button
+            style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+            className={`${
+              isIntracollege ? "w-1/2" : "w-1/3"
+            } text-white uppercase font-bold py-2 rounded-full transition-all ${
+              activeTab === "offstage" ? "bg-[#ff00ff]" : "hover:bg-[#ff00ff5d]"
+            }`}
+            onClick={() => setActiveTab("offstage")}
+          >
+            Off-Stage
+          </button>
+          {!isIntracollege && (
+            <button
+              style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+              className={`w-1/3 text-white uppercase font-bold py-2 rounded-full transition-all ${
+                activeTab === "technical"
+                  ? "bg-[#ff00ff]"
+                  : "hover:bg-[#ff00ff5d]"
+              }`}
+              onClick={() => setActiveTab("technical")}
+            >
+              Technical
+            </button>
+          )}
+        </div>
+      </div>
 
+      {/* Event List */}
       <div className="mt-10 w-full flex flex-col items-center">
         <EventList activeTab={activeTab} />
       </div>
@@ -55,35 +75,6 @@ const SlideTabs = () => {
   );
 };
 
-const Tab = ({ children, setPosition, onClick }) => {
-  const ref = useRef(null);
-
-  return (
-    <li
-      ref={ref}
-      onClick={onClick}
-      onMouseEnter={() => {
-        if (!ref?.current) return;
-        const { width } = ref.current.getBoundingClientRect();
-        setPosition({ left: ref.current.offsetLeft, width, opacity: 1 });
-      }}
-      className="relative z-10 block cursor-pointer px-6 py-3 text-sm uppercase text-[#ff00ff] hover:text-[#00ffff] transition-all"
-    >
-      {children}
-    </li>
-  );
-};
-
-const Cursor = ({ position }) => {
-  return (
-    <motion.li
-      animate={{ ...position }}
-      className="absolute z-0 h-10 rounded-full bg-[#ff00ff] opacity-80"
-    />
-  );
-};
-
-/* Dynamically Render Events */
 const EventList = ({ activeTab }) => {
   let events = [];
 
@@ -100,7 +91,7 @@ const EventList = ({ activeTab }) => {
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="grid gap-6 w-full max-w-6xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+      className="grid gap-x-16 gap-y-1 w-full max-w-6xl grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
     >
       {events.map((event) => (
         <Eventdetailscard

@@ -27,7 +27,13 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-[100] px-4 py-2 flex justify-between items-center w-full">
       <div>
-        <img className="w-32" src={perilogo} alt="clglogo" />
+        <Link
+          to="/"
+          onClick={() => handleNavClick("hero")}
+          state={{ scrollTo: "hero" }}
+        >
+          <img className="w-32" src={perilogo} alt="clglogo" />
+        </Link>
       </div>
       <div
         className={`nav-links md:static absolute rounded-2xl p-4 md:min-h-fit min-h-[40vh] ${

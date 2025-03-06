@@ -14,7 +14,7 @@ const Eventdetail = () => {
     );
   }
   return (
-    <div className="flex w-full bg-purple-900 min-h-screen overflow-hidden px-6 py-4 flex-col items-center">
+    <div className="flex w-ful min-h-screen overflow-hidden px-5 py-4 flex-col items-center">
       <div className="w-full flex flex-col items-center">
         <div className="text-white pb-16 text-4xl tracking-tight mt-22 sm:mt-22 md:mt-24 lg:mt-28 xl:mt-30 lg:text-5xl w-full">
           <div
@@ -46,24 +46,33 @@ const Eventdetail = () => {
           </div>
 
           {/* Description */}
-          <p className="text-white text-sm sm:text-base leading-relaxed mt-6">
+          <p
+            className="text-white text-base sm:text-lg font-semibold leading-relaxed mt-6"
+            style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+          >
             {event.description}
           </p>
 
           {/* Brief */}
-          <p className="text-white text-base sm:text-lg font-semibold leading-relaxed mt-3">
+          <p
+            className="text-white text-sm sm:text-base leading-relaxed mt-3"
+            style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+          >
             {event.brief}
           </p>
         </div>
 
         {/* Right Side: Rules, Points, Event Details, Register Button */}
-        <div className="lg:w-1/2 flex flex-col gap-6 items-center lg:items-start">
+        <div className="lg:w-1/2 flex flex-col gap-6 pb-8 items-center lg:items-start ">
           {/* Rules Section */}
-          <div>
+          <div className="w-full text-left">
             <h4 className="text-white text-lg sm:text-xl font-bold mb-2">
               Rules
             </h4>
-            <ul className="text-white text-sm  sm:text-base leading-relaxed list-disc list-inside">
+            <ul
+              className="text-white text-sm  sm:text-base leading-relaxed list-disc list-inside"
+              style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+            >
               {event.rules.map((rule, index) => (
                 <li key={index}>{rule}</li>
               ))}
@@ -71,17 +80,26 @@ const Eventdetail = () => {
           </div>
 
           {/* Event Details Section */}
-          <div>
+          <div className="w-full text-left">
             <h4 className="text-white text-lg sm:text-xl font-bold mb-2">
               Event Details
             </h4>
-            <p className="text-white text-sm sm:text-base leading-relaxed">
+            <p
+              className="text-white text-sm sm:text-base leading-relaxed"
+              style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+            >
               <strong>Date:</strong> {event.eventDetails.date}
             </p>
-            <p className="text-white text-sm sm:text-base leading-relaxed">
+            <p
+              className="text-white text-sm sm:text-base leading-relaxed"
+              style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+            >
               <strong>Time:</strong> {event.eventDetails.time}
             </p>
-            <p className="text-white text-sm sm:text-base leading-relaxed">
+            <p
+              className="text-white text-sm sm:text-base leading-relaxed"
+              style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
+            >
               <strong>Fees:</strong> {event.eventDetails.fees}
             </p>
           </div>

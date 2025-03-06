@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const images = [
-  { title: "Image 1", src: "https://via.wallpapercave.com/200" },
-  { title: "Image 2", src: "https://via.wallpapercave.com/200" },
+  { title: "Image 1", src: "https://wallpaperaccess.com/full/809523.jpg" },
+  { title: "Image 2", src: "https://wallpaperaccess.com/full/809523.jpg" },
   { title: "Image 3", src: "https://wallpaperaccess.com/full/809523.jpg" },
   { title: "Image 4", src: "https://wallpaperaccess.com/full/809523.jpg" },
   { title: "Image 5", src: "https://wallpaperaccess.com/full/809523.jpg" },

@@ -5,7 +5,7 @@ import { BackgroundGradient } from "./ui/background-gradient";
 
 const About = () => {
   return (
-    <div className="flex w-full min-h-screen overflow-hidden px-6 py-4 flex-col items-center">
+    <div className="flex w-full min-h-screen overflow-hidden px-6 py-4 flex-col items-center ">
       <div className="w-full flex flex-col items-center">
         <div className="text-white pb-16 text-3xl tracking-tight lg:mt-16 lg:text-4xl w-full">
           <div

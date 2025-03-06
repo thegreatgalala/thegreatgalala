@@ -25,18 +25,24 @@ const Home = () => {
   }, [location]);
   return (
     <div className="w-screen h-auto bg-gray-950 bg-cover relative">
-      <StarsBackground />
-      <ShootingStars />
-      <Background />
+      <div className="absolute inset-0 z-0">
+        <Background />
+      </div>
       <Fireworks />
+      <ShootingStars />
+      <StarsBackground />
       <Navbar />
-      <Hero />
+      <section id="hero">
+        <Hero />
+      </section>
+
       <section id="about">
         <About />
       </section>
       <Sponsors />
-      <Events />
-      <section id="events"></section>
+      <section id="events">
+        <Events />
+      </section>
       <div className="w-full bg-black relative z-10">
         <section id="footer">
           <Footer />

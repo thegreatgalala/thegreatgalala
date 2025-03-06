@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { ShootingStars } from "../components/ui/shooting-stars";
 import { StarsBackground } from "../components/ui/stars-background";
 import Eventdetail from "../components/ui-components/Eventdetail";
+import Background from "../components/Background";
 import Footer from "../components/Footer";
 
 const Eventreg = () => {
@@ -19,14 +20,17 @@ const Eventreg = () => {
     }
   }, [location]);
   return (
-    <div className="w-screen h-auto bg-purple-900 bg-cover relative">
+    <div className="w-screen h-auto bg-gray-950 bg-cover relative">
+      <Background />
       <StarsBackground />
       <ShootingStars />
       <Navbar />
       <Eventdetail />
-      <section id="footer">
-        <Footer />
-      </section>
+      <div className="w-full bg-black relative z-10">
+        <section id="footer">
+          <Footer />
+        </section>
+      </div>
     </div>
   );
 };
