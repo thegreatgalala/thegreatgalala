@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
-import { BackgroundGradient } from "../components/ui-components/Clgeventscard";
+import { BackgroundGradient } from "./ui/background-gradient";
 import {
   technicalEvents,
   onStageEvents,
   offStageEvents,
 } from "../constants/intraEventDetails";
-import ClgEventscard from "../components/ui-components/Clgeventscard";
+import ClgEventscard from "./ui-components/Clgeventscard";
 
 export const Intraclgevents = () => {
   return (
