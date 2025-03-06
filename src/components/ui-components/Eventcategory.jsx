@@ -1,15 +1,10 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const ClgEventscard = ({ imageUrl, eventName }) => {
-  const location = useLocation();
-
-  // Extract the base path from the current URL
-  const basePath = location.pathname.split("/")[1] || ""; // Gets the first part of the path
-
   return (
-    <Link to={`/${basePath}/${eventName.toLowerCase().replace(/\s+/g, "")}`}>
-      <div className="relative drop-shadow-xl w-32 sm:w-64 md:w-80 h-48 sm:h-[220px] md:h-[250px] overflow-hidden rounded-xl bg-[#3d3c3d]">
+    <Link to={`/${eventName.toLowerCase().replace(/\s+/g, "")}`}>
+      <div className="relative drop-shadow-xl w-64 sm:w-80 md:w-96 h-96 sm:h-[450px] md:h-[500px] overflow-hidden rounded-xl bg-[#3d3c3d]">
         {/* Image - Fills Almost Entire Card */}
         <img
           src={imageUrl}
