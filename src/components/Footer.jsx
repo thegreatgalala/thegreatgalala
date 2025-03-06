@@ -102,7 +102,7 @@ const Footer = () => {
             </a>
             <a
               href="https://www.instagram.com/peri_neonize.25/"
-              className="m-2 hover:cursor-pointer text"
+              className="m-2 hover:cursor-pointer"
               target="blank"
             >
               <InstagramIcon fontSize="large" />
