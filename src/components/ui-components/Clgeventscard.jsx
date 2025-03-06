@@ -9,20 +9,21 @@ const ClgEventscard = ({ imageUrl, eventName }) => {
 
   return (
     <Link to={`/${basePath}/${eventName.toLowerCase().replace(/\s+/g, "")}`}>
-      <div className="relative drop-shadow-xl w-32 sm:w-64 md:w-80 h-48 sm:h-[220px] md:h-[250px] overflow-hidden rounded-xl bg-[#3d3c3d]">
+      <div className="relative drop-shadow-xl w-32 sm:w-64 md:w-80 h-48 sm:h-[220px] md:h-[250px] overflow-hidden bg-[#3d3c3d]">
         {/* Image - Fills Almost Entire Card */}
         <img
           src={imageUrl}
           alt="Event"
-          className="absolute inset-0 w-full h-full object-cover rounded-xl z-[1]"
+          className="absolute inset-0 w-full h-full object-cover z-[1]"
         />
 
         {/* Overlay to Darken Image for Better Text Visibility */}
-        <div className="absolute inset-0 bg-black opacity-30 z-[2] rounded-xl" />
+        <div className="absolute inset-0 bg-black opacity-30 z-[2]" />
 
         {/* Event Name - Centered */}
         <div
-          className="absolute inset-0 flex items-center justify-center text-white text-3xl sm:text-xl md:text-2xl font-bold z-[3]"
+          className="absolute inset-0 flex items-center justify-center text-white 
+             text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold z-[3]"
           style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
         >
           {eventName}

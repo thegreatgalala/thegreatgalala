@@ -20,7 +20,7 @@ const Eventreg = () => {
     }
   }, [location]);
   return (
-    <div className="w-screen h-auto bg-gray-950 bg-cover relative">
+    <div className="w-screen h-auto bg-[#2D1D4C] bg-cover relative">
       <Background />
       <StarsBackground />
       <ShootingStars />

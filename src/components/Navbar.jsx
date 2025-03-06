@@ -64,6 +64,17 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
+            <Link
+              to="/team"
+              onClick={() => handleNavClick("events")}
+              state={{ scrollTo: "events" }}
+            >
+              <button>
+                <span className="text-xs cursor-pointer text-white">Team</span>
+              </button>
+            </Link>
+          </li>
+          <li>
             <button onClick={() => handleNavClick("footer")}>
               <span className="text-xs cursor-pointer text-white">Contact</span>
             </button>

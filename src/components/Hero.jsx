@@ -3,6 +3,7 @@ import tgglogo from "../assets/tgglogo.svg";
 import Countdown from "./ui-components/Countdown";
 import PeriNeonize from "../assets/PeriNeonize.svg";
 import { FiArrowRight } from "react-icons/fi";
+import Fireworks from "./ui/fireworks";
 import {
   useMotionTemplate,
   useMotionValue,
@@ -34,6 +35,7 @@ const Hero = () => {
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
   return (
     <div className="flex flex-col items-center justify-center min-h-screen text-center p-6 pt-48 space-y-10 overflow-hidden ">
+      <Fireworks />
       <span className="mb-1.5 inline-block px-3 py-1.5 text-sm">
         <img
           src={PeriNeonize}

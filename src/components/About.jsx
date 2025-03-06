@@ -7,13 +7,13 @@ const About = () => {
   return (
     <div className="flex w-full min-h-screen overflow-hidden px-6 py-4 flex-col items-center ">
       <div className="w-full flex flex-col items-center">
-        <div className="text-white pb-16 text-3xl tracking-tight lg:mt-16 lg:text-4xl w-full">
+        <div className="text-white pb-16 text-4xl tracking-tight lg:mt-20 lg:text-6xl w-full">
           <div
             className="my-8 flex items-center gap-4 after:h-2 after:bg-gray-300 after:rounded-full after:content-[''] 
                       after:flex-1 after:w-full sm:after:w-3/4 md:after:w-1/2 lg:after:w-1/4 xl:after:w-1/6 
                       after:hidden sm:after:block text-center"
           >
-            Previously
+            Previously on
           </div>
         </div>
         <div className="flex justify-center w-full">

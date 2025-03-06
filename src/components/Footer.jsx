@@ -1,6 +1,7 @@
 import React from "react";
 import Sociallinks from "./ui-components/Sociallinks";
 import tgglogo from "../assets/tgglogo.svg";
+import PeriNeonize from "../assets/PeriNeonize.svg";
 
 const Footer = () => {
   return (
@@ -17,11 +18,16 @@ const Footer = () => {
       <div className="px-6 py-4 lg:py-6">
         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 py-6 text-base">
           {/* Image Section (Inside Footer) */}
-          <div className="w-full md:w-1/3 flex justify-center md:justify-start">
+          <div className="w-full md:w-1/3 flex flex-col items-center space-y-4">
+            <img
+              src={PeriNeonize}
+              alt="theme logo"
+              className="w-1/2 max-w-xs rounded-lg shadow-md items-center"
+            />
             <img
               src={tgglogo}
               alt="Footer Banner"
-              className="w-3/4 max-w-xs rounded-lg shadow-md"
+              className="w-6/7 max-w-lg rounded-lg shadow-md"
             />
           </div>
 

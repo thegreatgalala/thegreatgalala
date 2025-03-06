@@ -4,16 +4,16 @@ import { Link } from "react-router-dom";
 const ClgEventscard = ({ imageUrl, eventName }) => {
   return (
     <Link to={`/${eventName.toLowerCase().replace(/\s+/g, "")}`}>
-      <div className="relative drop-shadow-xl w-64 sm:w-80 md:w-96 h-96 sm:h-[450px] md:h-[500px] overflow-hidden rounded-xl bg-[#3d3c3d]">
+      <div className="relative drop-shadow-xl w-64 sm:w-80 md:w-96 h-96 sm:h-[450px] md:h-[500px] overflow-hidden  bg-[#3d3c3d]">
         {/* Image - Fills Almost Entire Card */}
         <img
           src={imageUrl}
           alt="Event"
-          className="absolute inset-0 w-full h-full object-cover rounded-xl z-[1]"
+          className="absolute inset-0 w-full h-full object-cover z-[1]"
         />
 
         {/* Overlay to Darken Image for Better Text Visibility */}
-        <div className="absolute inset-0 bg-black opacity-30 z-[2] rounded-xl" />
+        <div className="absolute inset-0 bg-black opacity-30 z-[2] " />
 
         {/* Event Name - Centered */}
         <div

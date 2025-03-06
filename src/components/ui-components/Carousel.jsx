@@ -29,40 +29,23 @@ export default function Carousel() {
   };
 
   return (
-    <div className="overflow-hidden relative rounded-3xl">
+    <div className="overflow-hidden relative ">
       <div
-        className="flex transition-transform ease-out duration-1000 rounded-3xl"
+        className="flex transition-transform ease-out duration-1000 "
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {slides.map((s, index) => (
-          <img
-            key={index}
-            src={s}
-            alt={`Slide ${index}`}
-            className="w-full rounded-3xl"
-          />
+          <img key={index} src={s} alt={`Slide ${index}`} className="w-full " />
         ))}
       </div>
 
-      <div className="absolute top-0 h-full w-full flex justify-between items-center text-white px-10 text-3xl">
+      <div className="absolute top-0 h-full w-full flex justify-between items-center text-white px-3 text-3xl">
         <button onClick={previousSlide}>
           <BsFillArrowLeftCircleFill />
         </button>
         <button onClick={nextSlide}>
           <BsFillArrowRightCircleFill />
         </button>
-      </div>
-
-      <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full">
-        {slides.map((_, i) => (
-          <div
-            key={"circle" + i}
-            onClick={() => setCurrent(i)}
-            className={`rounded-full w-5 h-5 cursor-pointer ${
-              i === current ? "bg-white" : "bg-gray-500"
-            }`}
-          ></div>
-        ))}
       </div>
     </div>
   );
