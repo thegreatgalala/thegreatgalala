@@ -25,7 +25,7 @@ const Navbar = () => {
     }
   };
   return (
-    <nav className="fixed top-0 left-0 right-0 z-[100] px-4 py-2 flex justify-between items-center w-full">
+    <nav className="fixed top-0 left-0 right-0 z-[100] px-4 py-2 flex  justify-between items-center w-full">
       <div>
         <Link
           to="/"
@@ -33,7 +33,7 @@ const Navbar = () => {
           state={{ scrollTo: "hero" }}
         >
           <img
-            className="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 transition-all duration-300"
+            className="w-22 sm:w-28 md:w-32 lg:w-36 xl:w-40 transition-all duration-300"
             src={perilogo}
             alt="clglogo"
           />
@@ -87,7 +87,7 @@ const Navbar = () => {
       </div>
       <div className="flex items-center gap-6">
         <img
-          className="w-20 sm:w-24 md:w-28 lg:w-32 xl:w-36 transition-all duration-300"
+          className="w-16 sm:w-20 md:w-24 lg:w-24 xl:w-30 transition-all duration-300"
           src={greatgalalalogo}
           alt="culturallogo"
         />

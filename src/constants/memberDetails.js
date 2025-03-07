@@ -33,7 +33,7 @@ const memberDetails = [
   },
   {
     id: 5,
-    image: "https://randomuser.me/api/portraits/women/35.jpg",
+    image: "../../assets/intracollege.png",
     name: "Aakash Kummar I",
     role: "ig__.dranzer",
     instagram: "https://www.linkedin.com/in/aakash-kummar-72a97431b/",

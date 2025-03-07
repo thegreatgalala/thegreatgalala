@@ -20,19 +20,16 @@ const Member = ({ image, name, role, instagram }) => {
           {name}
         </p>
 
-        <p className="text-sm sm:text-base md:text-lg font-base text-gray-400">
-          {instagram ? (
-            <a
-              href={instagram}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-gray-300 transition duration-300"
-            >
-              {role}
-            </a>
-          ) : (
-            role
-          )}
+        {/* Make the Role Clickable */}
+        <p className="text-sm sm:text-base md:text-lg font-base text-gray-400 z-30">
+          <a
+            href={instagram} // Clickable link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative z-50 text-gray-400 hover:text-gray-300 transition duration-300"
+          >
+            {role}
+          </a>
         </p>
       </div>
     </div>

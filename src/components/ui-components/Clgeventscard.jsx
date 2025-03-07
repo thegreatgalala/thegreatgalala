@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 
-const ClgEventscard = ({ imageUrl, eventName }) => {
+const ClgEventscard = ({ imageUrl, eventName, url }) => {
   const location = useLocation();
 
   // Extract the base path from the current URL
@@ -9,7 +9,7 @@ const ClgEventscard = ({ imageUrl, eventName }) => {
 
   return (
     <Link
-      to={`/${basePath}/${eventName.toLowerCase().replace(/\s+/g, "")}`}
+      to={`/${basePath}/${url.toLowerCase().replace(/\s+/g, "")}`}
       onClick={() => window.scrollTo(0, 0)}
     >
       <div className="relative drop-shadow-xl w-80 sm:w-64 md:w-80 h-80 sm:h-[256px] md:h-[320px] overflow-hidden bg-[#3d3c3d]">

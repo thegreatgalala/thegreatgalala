@@ -1,7 +1,3 @@
-import project1 from "../assets/eventphotos/sample.jpeg";
-import debate from "../assets/eventdetails/debate.jpg";
-import iplauctionhouse from "../assets/eventdetails/iplauctionhouse.jpg";
-import firelesscooking from "../assets/eventdetails/firelesscooking.jpg";
 import solodance from "../assets/eventdetails/solodance.jpg";
 import groupdance from "../assets/eventdetails/groupdance.jpg";
 import battleofbands from "../assets/eventdetails/battleofbands.jpg";
@@ -14,6 +10,17 @@ import webdesign from "../assets/eventdetails/webdesign.jpg";
 import justaminute from "../assets/eventdetails/justamin.jpg";
 import technicalquiz from "../assets/eventdetails/technicalquiz.jpg";
 import paperpresentation from "../assets/eventdetails/paperpresentation.jpg";
+import debate from "../assets/eventdetails/debate.jpg";
+import iplauctionhouse from "../assets/eventdetails/iplauctionhouse.jpg";
+import firelesscooking from "../assets/eventdetails/firelesscooking.jpg";
+import esports from "../assets/eventdetails/esports.jpeg";
+import shortfilm from "../assets/eventdetails/shortfilm.jpeg";
+import connectionz from "../assets/eventdetails/connectionz.jpeg";
+import boxcricket from "../assets/eventdetails/boxcricket.jpeg";
+import animequiz from "../assets/eventdetails/animequiz.jpeg";
+import reels from "../assets/eventdetails/reels.jpeg";
+import startmusic from "../assets/eventdetails/startmusic.jpeg";
+import solosinging from "../assets/eventdetails/solosinging.jpeg";
 
 export const technicalEvents = [
   {
@@ -111,7 +118,7 @@ export const onStageEvents = [
   },
   {
     id: 9,
-    image: project1,
+    image: solosinging,
     title: "Solo Singing",
     url: "solosinging",
     category: "onstage",
@@ -120,49 +127,49 @@ export const onStageEvents = [
 export const offStageEvents = [
   {
     id: 1,
-    image: project1,
+    image: startmusic,
     title: "Start Music",
     url: "startmusic",
     category: "offstage",
   },
   {
     id: 2,
-    image: project1,
+    image: reels,
     title: "Reels",
     url: "reels",
     category: "offstage",
   },
   {
     id: 3,
-    image: project1,
+    image: animequiz,
     title: "Anime Quiz",
     url: "animequiz",
     category: "offstage",
   },
   {
     id: 4,
-    image: project1,
+    image: boxcricket,
     title: "Box Cricket",
     url: "boxcricket",
     category: "offstage",
   },
   {
     id: 5,
-    image: project1,
+    image: connectionz,
     title: "Connectionz",
     url: "connectionz",
     category: "offstage",
   },
   {
     id: 6,
-    image: project1,
+    image: shortfilm,
     title: "Short Film",
     url: "shortfilm",
     category: "offstage",
   },
   {
     id: 7,
-    image: project1,
+    image: esports,
     title: "E-sports (Bgmi, Freefire, Valorant)",
     url: "esports",
     category: "offstage",

@@ -6,7 +6,7 @@ import { StarsBackground } from "../components/ui/stars-background";
 import Background from "../components/Background";
 import Fireworks from "../components/ui/fireworks";
 import Footer from "../components/Footer";
-import Teammember from "../components/Teammembers";
+import Teammember from "../components/Teammember";
 
 const Home = () => {
   const location = useLocation();

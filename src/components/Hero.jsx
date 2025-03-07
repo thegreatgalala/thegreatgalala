@@ -52,8 +52,8 @@ const Hero = () => {
         className="text-3xl sm:text-2xl md:text-4xl -mt-5 font-extrabold text-white"
         style={{
           fontFamily: "LexendDecaRegular, sans-serif",
-          WebkitTextStroke: "1.5px #ff00ff", // Pink outline
-          textShadow: "0 0 4px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff", // Neon glow
+          WebkitTextStroke: "0.5px #EB4AA1", // Pink outline
+          textShadow: "0 0 2px #EB4AA1, 0 0 8px #EB4AA1, 0 0 18px #EB4AA1", // Neon glow
         }}
       >
         March 27th & 28th

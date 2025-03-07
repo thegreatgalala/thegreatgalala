@@ -12,7 +12,9 @@ const Teammember = () => {
           <div className="flex-1 h-2 bg-gray-300 rounded-full hidden sm:block"></div>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-50">
+
+      {/* First row with 3 members (1-column on mobile, 3-column on medium+) */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {memberDetails.slice(0, 3).map((member) => (
           <Member
             key={member.id}
@@ -24,8 +26,8 @@ const Teammember = () => {
         ))}
       </div>
 
-      {/* Second row with 2 members centered */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-38 md:col-span-3 md:justify-center">
+      {/* Second row with 2 members (centered in medium+ screens) */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:justify-center">
         {memberDetails.slice(3, 5).map((member) => (
           <Member
             key={member.id}

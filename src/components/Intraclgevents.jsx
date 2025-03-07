@@ -128,6 +128,7 @@ const EventList = ({ activeTab, search }) => {
               key={event.title}
               imageUrl={event.image}
               eventName={event.title}
+              url={event.url}
             />
           </BackgroundGradient>
         ))

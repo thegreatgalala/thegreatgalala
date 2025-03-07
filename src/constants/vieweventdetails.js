@@ -20,6 +20,7 @@ import boxcricket from "../assets/eventdetails/boxcricket.jpeg";
 import animequiz from "../assets/eventdetails/animequiz.jpeg";
 import reels from "../assets/eventdetails/reels.jpeg";
 import startmusic from "../assets/eventdetails/startmusic.jpeg";
+import solosinging from "../assets/eventdetails/solosinging.jpeg";
 
 export const viewEventDetails = {
   solodance: {
@@ -545,8 +546,8 @@ export const viewEventDetails = {
     description: "Create visually stunning and user-friendly websites!",
     brief:
       "Participants will design a functional and aesthetically pleasing web interface based on the given theme.",
-    poster: webdesign,
-    url: "webdesign",
+    poster: solosinging,
+    url: "solosinging",
     eventDetails: {
       time: "-",
       date1: "27 Mar 2025",
