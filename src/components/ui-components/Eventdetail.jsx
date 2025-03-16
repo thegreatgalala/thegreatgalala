@@ -17,8 +17,12 @@ const Eventdetail = () => {
 
   // Determine which date to display
   const eventDate = location.pathname.includes("intercollege")
-    ? event.eventDetails.date1
-    : event.eventDetails.date2;
+    ? event.eventDetails.date2
+    : event.eventDetails.date1;
+
+  const registerLink = location.pathname.includes("intercollege")
+    ? "https://www.google.com"
+    : "https://docs.google.com/forms/d/e/1FAIpQLSclL22GdOpfwOs3S9XvJVJdjHZeB4wwE7O9bGP4Ni5scbCdHQ/viewform";
 
   return (
     <div className="flex w-full min-h-screen overflow-hidden px-5 py-4 flex-col items-center">
@@ -49,6 +53,7 @@ const Eventdetail = () => {
                 src={event.poster}
                 alt={event.title}
                 className="w-[99.5%] h-[99.5%] object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -113,12 +118,14 @@ const Eventdetail = () => {
           </div>
 
           {/* Register Button */}
-          <button
-            className="bg-pink-500 text-white text-sm sm:text-base font-semibold px-6 py-3 rounded-lg 
+          <a href={registerLink} target="_blank" rel="noopener noreferrer">
+            <button
+              className="bg-pink-500 text-white text-sm sm:text-base font-semibold px-6 py-3 rounded-lg 
             shadow-lg transition-transform hover:scale-105 hover:shadow-pink-500/80"
-          >
-            Register Now
-          </button>
+            >
+              Register Now
+            </button>
+          </a>
         </div>
       </div>
     </div>

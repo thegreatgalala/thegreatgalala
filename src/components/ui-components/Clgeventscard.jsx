@@ -18,6 +18,7 @@ const ClgEventscard = ({ imageUrl, eventName, url }) => {
           src={imageUrl}
           alt="Event"
           className="absolute inset-0 w-full h-full object-cover z-[1]"
+          loading="lazy"
         />
 
         {/* Overlay to Darken Image for Better Text Visibility */}

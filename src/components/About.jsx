@@ -21,6 +21,7 @@ const About = () => {
             className="w-96 sm:w-96 md:w-[25rem] lg:w-[30rem] xl:w-[50rem]  mb-0"
             src={tgglogo1}
             alt="tgglogo1"
+            loading="lazy"
           />
         </div>
         <div className="flex flex-col lg:flex-row items-center lg:items-start w-full px-6 lg:px-16 py-11 gap-10 mb-16">

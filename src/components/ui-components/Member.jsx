@@ -7,6 +7,7 @@ const Member = ({ image, name, role, instagram }) => {
         src={image}
         alt={`${name}'s Avatar`}
         className="w-24 h-24 sm:w-44 sm:h-44 md:w-44 md:h-44 lg:w-52 lg:h-52 xl:w-60 xl:h-60 z-40 border-4 rounded-full transition-all duration-300 shadow-[0_0_20px_#BD81A4] border-[#db459d] hover:shadow-[0_0_30px_#BD81A4] hover:border-[#ff85cc]"
+        loading="lazy"
       />
 
       <div className="mt-5">

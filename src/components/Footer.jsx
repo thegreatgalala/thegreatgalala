@@ -27,11 +27,13 @@ const Footer = () => {
               src={PeriNeonize}
               alt="theme logo"
               className="w-1/2 max-w-xs rounded-lg shadow-md items-center"
+              loading="lazy"
             />
             <img
               src={tgglogo}
               alt="Footer Banner"
               className="w-6/7 max-w-lg rounded-lg shadow-md"
+              loading="lazy"
             />
           </div>
 

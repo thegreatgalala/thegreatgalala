@@ -36,6 +36,7 @@ const Navbar = () => {
             className="w-22 sm:w-28 md:w-32 lg:w-36 xl:w-40 transition-all duration-300"
             src={perilogo}
             alt="clglogo"
+            loading="lazy"
           />
         </Link>
       </div>
@@ -90,6 +91,7 @@ const Navbar = () => {
           className="w-16 sm:w-20 md:w-24 lg:w-24 xl:w-30 transition-all duration-300"
           src={greatgalalalogo}
           alt="culturallogo"
+          loading="lazy"
         />
         <button
           onClick={onToggleMenu}

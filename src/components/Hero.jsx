@@ -41,12 +41,14 @@ const Hero = () => {
           src={PeriNeonize}
           alt="theme logo"
           className="w-56 sm:w-48 md:w-52 lg:w-56 xl:w-64"
+          loading="lazy"
         />
       </span>
       <img
         className="w-96 sm:w-96 md:w-[25rem] lg:w-[30rem] xl:w-[50rem]  mb-0 "
         src={tgglogo}
         alt="cultural-logo"
+        loading="lazy"
       />
       <div
         className="text-3xl sm:text-2xl md:text-4xl -mt-5 font-extrabold text-white"
