@@ -8,7 +8,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 const Footer = () => {
   return (
     <footer className="bg-black text-white w-full">
-      <div className="text-white text-xl tracking-tight lg:text-3xl w-full overflow-hidden px-6 py-2 flex flex-col items-center">
+      <div className="text-[#4AC3EB] text-xl tracking-tight lg:text-3xl w-full overflow-hidden px-6 py-2 flex flex-col items-center">
         <div
           className="my-6 flex items-center gap-4 text-center w-full justify-center sm:justify-normal 
                 after:h-1 after:bg-gray-500 after:rounded-full after:content-[''] 

@@ -8,7 +8,7 @@ const Events = () => {
   return (
     <div className="flex w-full min-h-screen overflow-hidden px-8 py-4 flex-col items-center mb-5">
       <div className="w-full flex flex-col items-center">
-        <div className="text-white pb-16 text-4xl tracking-tight lg:mt-20 lg:text-6xl w-full flex items-center justify-center">
+        <div className="text-[#4AC3EB] pb-16 text-4xl tracking-tight lg:mt-20 lg:text-6xl w-full flex items-center justify-center">
           <div className="flex items-center w-full">
             {/* Left Line - Hidden on Mobile */}
             <div className="flex-1 h-2 bg-gray-300 rounded-full hidden sm:block"></div>

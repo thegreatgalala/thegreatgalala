@@ -38,7 +38,7 @@ const Home = () => {
       <section id="about">
         <About />
       </section>
-      {/* <Sponsors /> */} {/* Uncomment if needed */}
+      <Sponsors />
       <section id="events">
         <Events />
       </section>

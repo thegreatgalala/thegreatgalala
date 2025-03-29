@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div className="flex w-full min-h-screen overflow-hidden px-6 py-4 flex-col items-center ">
       <div className="w-full flex flex-col items-center">
-        <div className="text-white pb-16 text-4xl tracking-tight lg:mt-20 lg:text-6xl w-full">
+        <div className="text-[#4AC3EB] pb-16 text-4xl tracking-tight lg:mt-20 lg:text-6xl w-full">
           <div
             className="my-8 flex items-center gap-4 after:h-2 after:bg-gray-300 after:rounded-full after:content-[''] 
                       after:flex-1 after:w-full sm:after:w-3/4 md:after:w-1/2 lg:after:w-1/4 xl:after:w-1/6 
@@ -35,15 +35,19 @@ const About = () => {
               className="mt-4 text-gray-300 text-xl sm:text-xl md:text-2xl lg:text-3xl text-justify"
               style={{ fontFamily: "LexendDecaRegular, sans-serif" }}
             >
-              Join us for an unforgettable journey filled with excitement,
-              learning, and fun. Join us for an unforgettable journey filled
-              with excitement, learning, and fun. Join us for an unforgettable
-              journey filled with excitement, learning, and fun. Join us for an
-              unforgettable journey filled with excitement, learning, and fun.
-              Join us for an unforgettable journey filled with excitement,
-              learning, and fun. Join us for an unforgettable journey filled
-              with excitement, learning, and fun. Join us for an unforgettable
-              journey filled with excitement, learning, and fun.
+              The Great Galala event is a vibrant celebration of heritage and
+              community, where tradition and artistry come to life. The festival
+              features a series of traditional performances, including dance
+              routines and musical ensembles that showcase the community's
+              age-old customs. Colorful costumes, ornate decorations, and lively
+              street parades set the stage for an immersive experience. Artisans
+              and craftsmen display their intricate works, reflecting the deep
+              artistic traditions of the region. Throughout the event,
+              ceremonial rituals honor ancestral roots and nature, reinforcing
+              the community’s strong bond with its cultural identity. Overall,
+              the festival is a joyous, inclusive gathering that highlights the
+              timeless traditions, communal spirit, and artistic legacy of the
+              culture it represents.
             </p>
           </div>
         </div>
